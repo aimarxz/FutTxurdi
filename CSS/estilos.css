@@ -496,7 +496,7 @@ tr:nth-child(even):hover {
 .inmune:hover {
     background-color: white;
 }
-
+/*  */
 .inl-table {
     display: flex;
     align-items: center;
