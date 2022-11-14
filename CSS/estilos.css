@@ -1042,4 +1042,12 @@ input[type="checkbox"]:checked~.oculto {
         align-items: center;
     }
 
+    .covidpht{
+        height: 150px;
+    }
+    .covidpht1{
+        height: 150px;
+    }
+
+
  }
