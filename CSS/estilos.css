@@ -453,13 +453,16 @@ nav a:hover {
     margin: 20px 40px;
 }
 
-.covidfather {
-    display: flex;
+.covidpht{
+    height: 300px;
+    margin: 0 40px;
+    float: right;
 }
 
-.covidfather img {
-    height: 200px;
-    margin-right: 40px;
+.covidpht1{
+    height: 300px;
+    margin: 0 40px;
+    float: left;
 }
 
 .imgcvd {
