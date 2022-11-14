@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../oinarri.css">
     <link rel="stylesheet" href="../CSS/estilos.css">
 
     <title>FutTxurdi</title>
@@ -77,6 +76,60 @@
     </div>
     <div class="contenedor">
         <div class="hijo parte2">
+            <h3 class="cnmrg margn">COVID-19 NEURRIAK</h3>
+            <p class="pcovid">Joan den abenduaren 22an Ligak onartutako COVID protokolo berriak argi utzi zuen
+                RFEFek denboraldi
+                hasierako zirkularrari eusten ziola partidak atzeratzeko.
+            </p>
+            <div class="covidfather">
+                <div class="inlinecovid">
+                    
+                    <p class="pcovid">Argi uzten du partidak jokatuko direla, baldin eta Lehen eta Bigarren Mailako
+                        taldeak gutxienez 13
+                        futbolari baditu gaituta lehen taldeko jokalarien eta mendeko edo filialetako taldeen artean.
+                    </p>
+                    <p class="pcovid">Jokalari kopuru hobearekin bakarrik etengo da partida bat, baita
+                        osasun-debekuengatik lekualdatzeko
+                        ezintasuna, instalazioen itxiera ere, baldin eta egoera hori partida jokatu aurreko 48 orduen
+                        barruan
+                        gertatzen bada, edo covid delakotik eratorritako antzeko beste batzuk.
+                    </p>
+                    
+                </div>
+                <img src="../MULTIMEDIA/IMG/covid-19.png" alt="">
+            </div>
+            <p class="pcovid">Kasu horietan, partida atzeratzea erabaki beharko da, betiere kontuan hartuta Lehen
+                Mailako kluben
+                berandutza-kopurua, arestian aipatutako arrazoiengatik, partida bakarrekoa izango dela, eta Bigarren
+                Mailako kluben kasuan, bi partidakoa.
+            </p>
+            <p class="pcovid">Nolanahi ere, partidak ezin izango dira atzeratu, baldin eta aurretik deskribatutako
+                zirkunstantziak
+                Lehen Mailako 30. jardunaldiaren eta Bigarren Mailako 34. jardunaldiaren ondoren gertatzen badira.
+            </p>
+            <p class="pcovid">Etendako partidu gisa ez da kontabilizatuko etendura horren erantzulea ez den kluba, lehen
+                aipatutako
+                zenbaketen ondorioetarako.
+            </p>
+            <p class="pcovid">Bertan behera gera daitezkeen partiden muga gaindituz gero, edo aipatutako azken
+                jardunaldietan gertatzen
+                badira, irabazletzat joko da (3tik 0era) partida jokatzeko moduan dagoen taldea, eta bi taldeak COVID
+                arrazoiengatik partida jokatzeko prest ez badaude, partida galtzailetzat emango zaie bi taldeei.
+            </p>
+            <p class="pcovid">Lehen taldeko zazpi eta bost fitxa profesional bitartean
+            </p>
+            <p class="pcovid">Zirkular bera berdegunean egon behar duten gutxieneko jokalari profesionalei buruzkoa da.
+            </p>
+            <p class="pcovid">Espainiako Futbol Federazioaren Araudiaren arabera, lehen taldeko futbolarien gutxieneko
+                kopurua zazpikoa
+                da beti zelaian. Bai proiektuaren hasieran, bai egin beharreko aldaketak egiten direnean.
+            </p>
+            <p class="pcovid">Baina COVIDen kasuan, ondo zehazten den bezala, lehen taldeko lizentzia duten jokalarien
+                gutxieneko
+                kopurua partida jokatzeko eta partida osoan zehar, hau da, lehen taldeko 5 jokalari, klubak partidarako
+                gaitutako lehen taldeko jokalarien kopuru handiagoa (gehienez 7) eduki ezean.
+            </p>
+            <img class="imgcvd" src="../MULTIMEDIA/IMG/covid-personas.png" alt="">
         </div>
 
         <div class="hijo parte3">
@@ -186,18 +239,19 @@
     </footer>
     <script>
         let open = true
+
         function vuelta() {
             let pika = document.getElementById("vu1")
             let pikapika = document.getElementById("asd")
 
-            if(open) {
+            if (open) {
                 $(pikapika).removeClass("ida");
                 pika.style.content = "url('/MULTIMEDIA/ICONOS/flecha.png')"
                 pika.style.transform += "rotate(180deg)";
                 pika.style.transitionDuration = "1s";
-                
+
             } else {
-                $(pikapika).addClass("ida"); 
+                $(pikapika).addClass("ida");
                 pika.style.content = "url('/MULTIMEDIA/ICONOS/menu.png')"
                 pika.style.transform = "rotate(0deg)";
             }

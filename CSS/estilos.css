@@ -447,6 +447,30 @@ nav a:hover {
     padding-left: 20px;
 }
 
+.pcovid {
+    text-align: justify;
+    font-weight: 400;
+    margin: 20px 40px;
+}
+
+.covidfather {
+    display: flex;
+}
+
+.covidfather img {
+    height: 200px;
+    margin-right: 40px;
+}
+
+.imgcvd {
+    width: 100%;
+    margin-bottom: -5px;
+}
+
+.inlinecovid {
+    width: 80%;
+}
+
 table {
     margin: 30px auto;
     border: 1px #E6E6E6 solid;
@@ -1011,6 +1035,8 @@ input[type="checkbox"]:checked~.oculto {
         margin: 0;
     }
 
+    .covidfather {
+        align-items: center;
+    }
 
-
-}
+ }
