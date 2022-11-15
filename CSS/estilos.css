@@ -304,6 +304,37 @@ nav a:hover {
 
 /******************************************************/
 
+.ef-si {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.ef-si::before {
+    opacity: 1;
+    content: '';
+    position: absolute;
+    height: 200%;
+    width: 100px;
+    background: linear-gradient(darkred, red);
+    animation: qwe linear 3s infinite;
+}
+
+.ef-si::after {
+    content: '';
+    inset: 4px;
+    position: absolute;
+    background-color: white;
+}
+
+/**********************************************/
 .borderboxanimado {
     height: 100%;
     width: 100%;
@@ -318,6 +349,7 @@ nav a:hover {
 }
 
 .borderboxanimado::before {
+    opacity: 0;
     content: '';
     position: absolute;
     height: 200%;

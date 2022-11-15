@@ -77,8 +77,8 @@
     <div class="contenedor">
         <div class="jokalariak">
             <div>
-                <div id="efecto" class="hijo parte10" onclick="jugador">
-                    <div class="borderboxanimado">
+                <div class="hijo parte10" onclick="jugador()">
+                    <div id="animacion" class="borderboxanimado">
                         <img class="ftinaki" src="../MULTIMEDIA/JUGADORES/inaki.png" alt="">
                     </div>
                 </div>
@@ -255,12 +255,25 @@
             }
             open = !open;
         }
+    </script>
 
-function jugador(){
-    let efecto = document.getElementById("efecto")
-    
-}
+    <script>
+        let abierto = true
 
+        function jugador() {
+            let ef = document.getElementById("animacion")
+            console.log("Hola")
+            if (abierto) {
+                $(ef).addClass("ef-si");
+                $(ef).removeClass("borderboxanimado");
+                abierto = false
+            }
+            else {
+                $(ef).addClass("borderboxanimado");
+                $(ef).removeClass("ef-si");
+                abierto = true
+            }
+        }
     </script>
 </body>
 
