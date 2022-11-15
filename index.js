@@ -18,4 +18,3 @@ $(document).on("scroll", function () {
         }
     }
 });
-

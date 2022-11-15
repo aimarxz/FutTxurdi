@@ -15,6 +15,17 @@
     transform: translate(0, 0);
 }
 
+.taga {
+    opacity: 0;
+    transform: translate(10vh, 0);
+    transition: all 1s;
+}
+
+.taga.visible1 {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
 a {
     text-decoration: none;
     color: black;
@@ -29,7 +40,6 @@ body {
 .kolorea {
     background-color: #222526;
 }
-
 
 
 header {
@@ -144,12 +154,66 @@ nav a:hover {
     transition: .7s;
 }
 
+.izkutatuta {
+    color: white;
+    position: absolute;
+    z-index: 15;
+    opacity: 0;
+}
+
+.ikusgarri {
+    color: rgb(170, 170, 170);
+    position: absolute;
+    z-index: 15;
+    opacity: 1;
+}
+
+/****************************************************************/
+
+.jokalariestruktura {
+    text-align: left;
+    width: 250px;
+}
+
+.jokalariflex {
+    display: flex;
+    align-items: center;
+}
+
+.jokalariflex h4 {
+    text-align: right;
+    font-size: 60px;
+    width: 65%;
+}
+
+.estruktura1 {
+    font-weight: 400;
+    color: #000;
+}
+
+.estruktura2 {
+    font-weight: 400;
+    color: #000;
+}
+
+.estruktura3 {
+    font-weight: 400;
+    color: #000;
+}
+
+.estruktura4 {
+    font-weight: 400;
+    color: #000;
+}
+
+/****************************************************************/
+
 .parte10:hover {
     cursor: pointer;
 }
 
 .parte10 {
-    margin: 40px auto;
+    margin: 0 auto 40px auto;
     height: 300px;
     width: 280px;
     margin-right: 20px;
@@ -583,6 +647,7 @@ tr:nth-child(even):hover {
 tr {
     font-size: 15px;
 }
+
 
 tr:nth-child(even) {
     background-color: #f2f2f2;
