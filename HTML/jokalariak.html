@@ -77,54 +77,54 @@
     <div class="contenedor">
         <div class="jokalariak">
             <div>
-                <div class="hijo parte10" onclick="jugador()">
+                <div class="hijo parte10" onclick="jugador1()">
                     <div id="animacion" class="borderboxanimado">
-                        <img class="ftinaki" src="../MULTIMEDIA/JUGADORES/inaki.png" alt="">
+                        <img id="imgjugador" class="ftinaki" src="../MULTIMEDIA/JUGADORES/inaki.png" alt="">
                     </div>
                 </div>
-                <div class="hijo parte10">
-                    <div class="borderboxanimado">
-                        <img class="ftinaki" src="../MULTIMEDIA/JUGADORES/yeray.png" alt="">
+                <div class="hijo parte10" onclick="jugador2()">
+                    <div id="animacion2" class="borderboxanimado">
+                        <img id="imgjugador2" class="ftinaki" src="../MULTIMEDIA/JUGADORES/yeray.png" alt="">
                     </div>
                 </div>
-                <div class="hijo parte10">
-                    <div class="borderboxanimado">
-                        <img class="ftinaki" src="../MULTIMEDIA/JUGADORES/dani.png" alt="">
+                <div class="hijo parte10" onclick="jugador3()">
+                    <div id="animacion3" class="borderboxanimado">
+                        <img id="imgjugador3" class="ftinaki" src="../MULTIMEDIA/JUGADORES/dani.png" alt="">
                     </div>
                 </div>
             </div>
             <div>
-                <div class="hijo parte10">
-                    <div class="borderboxanimado">
-                        <img class="ftinaki" src="../MULTIMEDIA/JUGADORES/jr.png" alt="">
+                <div class="hijo parte10" onclick="jugador4()">
+                    <div id="animacion4" class="borderboxanimado">
+                        <img id="imgjugador4" class="ftinaki" src="../MULTIMEDIA/JUGADORES/jr.png" alt="">
                     </div>
                 </div>
 
-                <div class="hijo parte10">
-                    <div class="borderboxanimado">
-                        <img class="ftinaki" src="../MULTIMEDIA/JUGADORES/capa.png" alt="">
+                <div class="hijo parte10" onclick="jugador5()">
+                    <div id="animacion5" class="borderboxanimado">
+                        <img id="imgjugador5" class="ftinaki" src="../MULTIMEDIA/JUGADORES/capa.png" alt="">
                     </div>
                 </div>
-                <div class="hijo parte10">
-                    <div class="borderboxanimado">
-                        <img class="ftinaki" src="../MULTIMEDIA/JUGADORES/berenger.png" alt="">
+                <div class="hijo parte10" onclick="jugador6()">
+                    <div id="animacion6" class="borderboxanimado">
+                        <img id="imgjugador6" class="ftinaki" src="../MULTIMEDIA/JUGADORES/berenger.png" alt="">
                     </div>
                 </div>
             </div>
             <div>
-                <div class="hijo parte10">
-                    <div class="borderboxanimado">
-                        <img class="ftinaki" src="../MULTIMEDIA/JUGADORES/muniain.png" alt="">
+                <div class="hijo parte10" onclick="jugador7()">
+                    <div id="animacion7" class="borderboxanimado">
+                        <img id="imgjugador7" class="ftinaki" src="../MULTIMEDIA/JUGADORES/muniain.png" alt="">
                     </div>
                 </div>
-                <div class="hijo parte10">
-                    <div class="borderboxanimado">
-                        <img class="ftinaki" src="../MULTIMEDIA/JUGADORES/raul.png" alt="">
+                <div class="hijo parte10" onclick="jugador8()">
+                    <div id="animacion8" class="borderboxanimado">
+                        <img id="imgjugador8" class="ftinaki" src="../MULTIMEDIA/JUGADORES/raul.png" alt="">
                     </div>
                 </div>
-                <div class="hijo parte10">
-                    <div class="borderboxanimado">
-                        <img class="ftinaki" src="../MULTIMEDIA/JUGADORES/villalibre.png" alt="">
+                <div class="hijo parte10" onclick="jugador9()">
+                    <div id="animacion9" class="borderboxanimado">
+                        <img id="imgjugador9" class="ftinaki" src="../MULTIMEDIA/JUGADORES/villalibre.png" alt="">
                     </div>
                 </div>
             </div>
@@ -258,23 +258,195 @@
     </script>
 
     <script>
-        let abierto = true
+        let abierto1 = true
 
-        function jugador() {
+        function jugador1() {
             let ef = document.getElementById("animacion")
+            let blur = document.getElementById("imgjugador")
             console.log("Hola")
-            if (abierto) {
+            if (abierto1) {
                 $(ef).addClass("ef-si");
                 $(ef).removeClass("borderboxanimado");
-                abierto = false
+                $(blur).addClass("blurjugador");
+
+                abierto1 = false
             }
             else {
                 $(ef).addClass("borderboxanimado");
                 $(ef).removeClass("ef-si");
-                abierto = true
+                $(blur).removeClass("blurjugador");
+                abierto1 = true
             }
         }
-    </script>
+
+    let abierto2 = true
+
+    function jugador2() {
+        let ef = document.getElementById("animacion2")
+        let blur = document.getElementById("imgjugador2")
+        console.log("Hola")
+        if (abierto2) {
+            $(ef).addClass("ef-si");
+            $(ef).removeClass("borderboxanimado");
+            $(blur).addClass("blurjugador");
+
+            abierto2 = false
+        }
+        else {
+            $(ef).addClass("borderboxanimado");
+            $(ef).removeClass("ef-si");
+            $(blur).removeClass("blurjugador");
+            abierto2 = true
+        }
+    }
+
+    let abierto3 = true
+
+    function jugador3() {
+        let ef = document.getElementById("animacion3")
+        let blur = document.getElementById("imgjugador3")
+        console.log("Hola")
+        if (abierto3) {
+            $(ef).addClass("ef-si");
+            $(ef).removeClass("borderboxanimado");
+            $(blur).addClass("blurjugador");
+
+            abierto3 = false
+        }
+        else {
+            $(ef).addClass("borderboxanimado");
+            $(ef).removeClass("ef-si");
+            $(blur).removeClass("blurjugador");
+            abierto3 = true
+        }
+    }
+
+    let abierto4 = true
+
+    function jugador4() {
+        let ef = document.getElementById("animacion4")
+        let blur = document.getElementById("imgjugador4")
+        console.log("Hola")
+        if (abierto4) {
+            $(ef).addClass("ef-si");
+            $(ef).removeClass("borderboxanimado");
+            $(blur).addClass("blurjugador");
+
+            abierto4 = false
+        }
+        else {
+            $(ef).addClass("borderboxanimado");
+            $(ef).removeClass("ef-si");
+            $(blur).removeClass("blurjugador");
+            abierto4 = true
+        }
+    }
+
+    let abierto5 = true
+
+    function jugador5() {
+        let ef = document.getElementById("animacion5")
+        let blur = document.getElementById("imgjugador5")
+        console.log("Hola")
+        if (abierto5) {
+            $(ef).addClass("ef-si");
+            $(ef).removeClass("borderboxanimado");
+            $(blur).addClass("blurjugador");
+
+            abierto5 = false
+        }
+        else {
+            $(ef).addClass("borderboxanimado");
+            $(ef).removeClass("ef-si");
+            $(blur).removeClass("blurjugador");
+            abierto5 = true
+        }
+    }
+
+    let abierto6 = true
+
+    function jugador6() {
+        let ef = document.getElementById("animacion6")
+        let blur = document.getElementById("imgjugador6")
+        console.log("Hola")
+        if (abierto6) {
+            $(ef).addClass("ef-si");
+            $(ef).removeClass("borderboxanimado");
+            $(blur).addClass("blurjugador");
+
+            abierto6 = false
+        }
+        else {
+            $(ef).addClass("borderboxanimado");
+            $(ef).removeClass("ef-si");
+            $(blur).removeClass("blurjugador");
+            abierto6 = true
+        }
+    }
+
+    let abierto7 = true
+
+    function jugador7() {
+        let ef = document.getElementById("animacion7")
+        let blur = document.getElementById("imgjugador7")
+        console.log("Hola")
+        if (abierto7) {
+            $(ef).addClass("ef-si");
+            $(ef).removeClass("borderboxanimado");
+            $(blur).addClass("blurjugador");
+
+            abierto7 = false
+        }
+        else {
+            $(ef).addClass("borderboxanimado");
+            $(ef).removeClass("ef-si");
+            $(blur).removeClass("blurjugador");
+            abierto7 = true
+        }
+    }
+
+    let abierto8 = true
+
+    function jugador8() {
+        let ef = document.getElementById("animacion8")
+        let blur = document.getElementById("imgjugador8")
+        console.log("Hola")
+        if (abierto8) {
+            $(ef).addClass("ef-si");
+            $(ef).removeClass("borderboxanimado");
+            $(blur).addClass("blurjugador");
+
+            abierto8 = false
+        }
+        else {
+            $(ef).addClass("borderboxanimado");
+            $(ef).removeClass("ef-si");
+            $(blur).removeClass("blurjugador");
+            abierto8 = true
+        }
+    }
+
+    let abierto9 = true
+
+    function jugador9() {
+        let ef = document.getElementById("animacion9")
+        let blur = document.getElementById("imgjugador9")
+        console.log("Hola")
+        if (abierto9) {
+            $(ef).addClass("ef-si");
+            $(ef).removeClass("borderboxanimado");
+            $(blur).addClass("blurjugador");
+
+            abierto9 = false
+        }
+        else {
+            $(ef).addClass("borderboxanimado");
+            $(ef).removeClass("ef-si");
+            $(blur).removeClass("blurjugador");
+            abierto9 = true
+        }
+    }
+</script>
 </body>
 
 <script>
