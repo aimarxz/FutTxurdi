@@ -132,8 +132,10 @@ nav a:hover {
 }
 
 .ftinaki {
-    width: 115%;
+    overflow: scroll;
+    width: 100%;
     position: relative;
+    z-index: 10
 }
 
 .parte10:hover .ftinaki {
@@ -142,9 +144,11 @@ nav a:hover {
     transition: .4s;
 }
 
+.parte10:hover {
+    cursor: pointer;
+}
+
 .parte10 {
-    background-size: auto 100%;
-    background-position: center;
     margin: 40px auto;
     height: 300px;
     width: 280px;
@@ -296,6 +300,51 @@ nav a:hover {
     align-items: center;
     /*************/
 }
+
+
+/******************************************************/
+
+.borderboxanimado {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.borderboxanimado::before {
+    content: '';
+    position: absolute;
+    height: 200%;
+    width: 100px;
+    background: linear-gradient(darkred, red);
+    animation: qwe linear 4s infinite;
+}
+
+.borderboxanimado::after {
+    content: '';
+    inset: 4px;
+    position: absolute;
+    background-color: white;
+}
+
+@keyframes qwe {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/******************************************************/
+
 
 .pjaurnaldia {
     text-align: center;
@@ -453,13 +502,13 @@ nav a:hover {
     margin: 20px 40px;
 }
 
-.covidpht{
+.covidpht {
     height: 300px;
     margin: 0 40px;
     float: right;
 }
 
-.covidpht1{
+.covidpht1 {
     height: 300px;
     margin: 0 40px;
     float: left;
@@ -1042,12 +1091,13 @@ input[type="checkbox"]:checked~.oculto {
         align-items: center;
     }
 
-    .covidpht{
+    .covidpht {
         height: 150px;
     }
-    .covidpht1{
+
+    .covidpht1 {
         height: 150px;
     }
 
 
- }
+}

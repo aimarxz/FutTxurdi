@@ -1,0 +1,50 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.borderboxanimado {
+    position: relative;
+    height: 300px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: bisque;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.borderboxanimado::before {
+    content: '';
+    position: absolute;
+    height: 400px;
+    width: 100px;
+    background: linear-gradient(darkred, red);
+    animation: asd linear 4s infinite;
+}
+
+.borderboxanimado::after {
+    content: '';
+    inset: 4px;
+    position: absolute;
+    background-color: aquamarine;
+}
+
+@keyframes asd {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.borderboxanimado h2 {
+    font-size: 105px;
+    z-index: 10;
+}
