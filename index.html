@@ -2,24 +2,35 @@
 <html lang="en">
 
 <head>
+    <!-- KARAKTERE ESPEZIALAK GAITZEKO -->
     <meta charset="UTF-8">
+    
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- LINKATZEKO CSS ORRIAREKIN (ESTILOAK) -->
     <link rel="stylesheet" href="./CSS/estilos.css">
+
+    <!-- WEB ORRIAREN IZENA -->
     <title>FutTxurdi</title>
+
+    <!-- LINKATZEKO WEB ORRIAREN FAVICON (GOIKALDEAN) -->
     <link rel="icon" type="image/x-icon" href="./MULTIMEDIA/ICONOS/logotipo.png">
 </head>
 
 <body>
-
-    <div class="wrapper">
-
+    <!-- FORMULARIOA -->
+    <div>
         <input type="checkbox" id="navigation" />
+
+        <!-- IKONOA FORMULARIOARENA -->
         <center>
             <label id="asd" class="logo-argazkia ida" for="navigation" onclick="vuelta()">
                 <img id="vu1" src="./MULTIMEDIA/ICONOS/menu.png">
             </label>
         </center>
+
+        <!-- FORMULARIO KONFIGURAZIOA -->
         <div class="oculto">
             <div class="div-oculto">
                 <form action="#" target="" method="get" name="formDatosPersonales">
@@ -46,12 +57,15 @@
         </div>
     </div>
 
+    <!-- GOIKO TESTUA -->
     <div class="arriba">
         <p>BIZKAIKO FUTBOL FEDERAKUNDEA - FEDERACIÓN VIZCAÍNA DE FÚTBOL</p>
     </div>
-    <div class="abajo"></div>
 
+    <!-- NABIGAZIO MENUA -->
     <div class="kolorea">
+
+        <!-- HEADER ATALA -->
         <header class="parte1">
             <a href="./index.html">
                 <div class="logo">
@@ -59,6 +73,8 @@
                     <p>FutTxurdi</p>
                 </div>
             </a>
+
+            <!-- NABIGAZIO MENUA SOILIK -->
             <nav>
                 <a href="./index.html" class="nav-link marka">HASIERA</a>
                 <a href="./HTML/klasifikazioa.html" class="nav-link">KLASIFIKAZIOA</a>
@@ -69,10 +85,10 @@
         </header>
     </div>
 
-    <div class="aita">
-        <p class="semea">ㅤ</p>
-    </div>
+    <!-- SECTIONEDUKIA ETA ASIDE EDUKIA -->
     <div class="contenedor">
+
+        <!-- SECTION EZKERREKO ALDEA -->
         <div class="hijo parte2">
             <div>
                 <h3 class="cnmrg">⠀EMAITZAK</h3>
@@ -370,6 +386,8 @@
 
 
         </div>
+
+        <!-- SECTION ESKUMAKO ALDEA -->
         <div class="hijo parte3">
             <div id="printzipala">
                 <h3 id="snmrg">⠀AZKEN BERRIAK</h3>
@@ -438,6 +456,8 @@
             </div>
         </div>
     </div>
+
+    <!-- FOOTER KONGIGURAZIOA -->
     <footer class="pie-pagina">
         <div class="grupo-1">
             <div class="box">
@@ -466,20 +486,23 @@
             <small>&copy; 2022 <b>Talde 5</b> - Eskubide Guztiak Erretserbatuta.</small>
         </div>
     </footer>
+
+    <!-- SCRIPTAK (JAVASCRIPT) -->
     <script>
         let open = true
+
         function vuelta() {
             let pika = document.getElementById("vu1")
             let pikapika = document.getElementById("asd")
 
-            if(open) {
+            if (open) {
                 $(pikapika).removeClass("ida");
                 pika.style.content = "url('/MULTIMEDIA/ICONOS/flecha.png')"
                 pika.style.transform += "rotate(180deg)";
                 pika.style.transitionDuration = "1s";
-                
+
             } else {
-                $(pikapika).addClass("ida"); 
+                $(pikapika).addClass("ida");
                 pika.style.content = "url('/MULTIMEDIA/ICONOS/menu.png')"
                 pika.style.transform = "rotate(0deg)";
             }

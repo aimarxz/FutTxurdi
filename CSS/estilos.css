@@ -4,42 +4,51 @@
     padding: 0;
 }
 
+
+/* ANIMAZIOAK  EGITEKO */
 .tag {
     opacity: 0;
     transform: translate(10vh, 0);
     transition: all 1s;
 }
 
+/* ANIMAZIOAK  EGITEKO */
 .tag.visible {
     opacity: 1;
     transform: translate(0, 0);
 }
 
+/* VIDEO KONFIGURAZIOA */
 video {
     width: 100%;
     z-index: 15;
 }
 
+/* AUDIO KONFIGURAZIOA */
 audio {
     margin: 20px 0;
 }
 
+/* ANIMAZIOAK  EGITEKO */
 .taga {
     opacity: 0;
     transform: translate(10vh, 0);
     transition: all 1s;
 }
 
+/* ANIMAZIOAK  EGITEKO */
 .taga.visible1 {
     opacity: 1;
     transform: translate(0, 0);
 }
 
+/* ESTEKEN KONFIGURAZIOA */
 a {
     text-decoration: none;
     color: black;
 }
 
+/* GORPUTZAREN KONFIGURAZIOA */
 body {
     background-color: #ededed;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -50,7 +59,7 @@ body {
     background-color: #222526;
 }
 
-
+/* HEADER KONFIGURAZIOA */
 header {
     margin: 0 auto;
     display: flex;
@@ -79,6 +88,7 @@ header {
     animation-iteration-count: 1;
 }
 
+/* ANIMAZIO KONFIGURAZIOA */
 @keyframes ida {
 
 
@@ -107,11 +117,13 @@ header {
     align-items: center;
 }
 
+/* NABIGATZAILE MENUAREN KONFIGURAZIOA */
 nav {
     display: flex;
     align-items: center;
 }
 
+/* NABIGATZAILEAREN ESTEKEN KONFIGURAZIOA */
 nav a {
     color: white;
     background-color: #222526;
@@ -119,18 +131,20 @@ nav a {
     font-size: 12px;
 }
 
-
+/* NABIGAZIO ARGAZKIA */
 nav img {
     margin: 0;
     height: 30px;
 }
 
+/* EFEKTU ANIMAZIOA */
 nav a:hover {
     background-color: #992A2E;
     transition: 0.5s;
 
 }
 
+/* MARKA GORRIA */
 .marka {
     background-color: #992A2E;
 }
